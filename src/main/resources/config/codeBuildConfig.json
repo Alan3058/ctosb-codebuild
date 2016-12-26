@@ -1,0 +1,117 @@
+{
+	/*mysql connection*/
+	jdbcDriver:"com.mysql.jdbc.Driver",
+	jdbcUrl:"jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8",
+	jdbcUsername:"root",
+	jdbcPassword:"lxy123", 
+	
+	/*oracle connection
+	jdbcDriver:"oracle.jdbc.driver.OracleDriver",
+	jdbcUrl:"jdbc:oracle:thin:@localhost:1521:test",
+	jdbcUsername:"root",
+	jdbcPassword:"lxy123",*/
+	
+	/*context build info*/
+	basePath:"e://codebuild",
+	javaSourceFolder:"src/main/java",
+	webSourceFolder:"src/main/webapp",
+	packagePath:"com/ctosb/test",
+	
+	filterField:"id,create_time,creator,modify_time,modifier,logic_status",
+	
+	templatePath:"config/templates",
+	templateInfoMap:{
+	byTable:[
+			{
+				templateName:"model.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generatePath:"",
+			 	generateSubPackagePath:"model",
+			 	generateSuffix:"Model.java"
+			},
+			{
+				templateName:"controller.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"controller",
+			 	generateSuffix:"Controller.java"
+			},
+			{
+				templateName:"service.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"services",
+			 	generateSuffix:"Manager.java"
+			},
+			{
+				templateName:"serviceImpl.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"services/impl",
+			 	generateSuffix:"ManagerImpl.java"
+			},
+			{
+				templateName:"dao.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"dao",
+			 	generateSuffix:"Dao.java"
+			},
+			{
+				templateName:"mapper.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"mapper",
+			 	generateSuffix:"Mapper.java"
+			},
+			{
+				templateName:"mapperXml.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generateSubPackagePath:"mapper",
+			 	generateSuffix:"Mapper.xml"
+			},
+			{
+				templateName:"jsp.ftl",
+			 	generateType:"web",
+			 	templatePath:"",
+			 	generateSubPackagePath:"jsp",
+			 	generateSuffix:"jsp.jsp"
+			},
+			{
+				templateName:"js.ftl",
+			 	generateType:"web",
+			 	templatePath:"",
+			 	generateSubPackagePath:"js",
+			 	generateSuffix:"js.js"
+			}
+		],
+	bySql:[
+			{
+				templateName:"item.ftl",
+			 	generateType:"java",
+			 	templatePath:"",
+			 	generatePath:"",
+			 	generateSubPackagePath:"view",
+			 	generateSuffix:"Item.java"
+			},
+			{
+				templateName:"jsp.ftl",
+			 	generateType:"web",
+			 	templatePath:"",
+			 	generateSubPackagePath:"jsp",
+			 	generateSuffix:".jsp"
+			},
+			{
+				templateName:"js.ftl",
+			 	generateType:"web",
+			 	templatePath:"",
+			 	generateSubPackagePath:"js",
+			 	generateSuffix:".js"
+			}
+		]
+	
+	}
+
+}
