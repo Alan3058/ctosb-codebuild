@@ -29,9 +29,9 @@ public class TypeMappingUtil {
         TYPEMAP.put("REAL", "Float");
         TYPEMAP.put("FLOAT", "Float");
         TYPEMAP.put("DOUBLE", "Double");
-        TYPEMAP.put("BINARY", "byte[]");
-        TYPEMAP.put("VARBINARY", "byte[]");
-        TYPEMAP.put("LONGVARBINARY", "byte[]");
+        TYPEMAP.put("BINARY", "Byte[]");
+        TYPEMAP.put("VARBINARY", "Byte[]");
+        TYPEMAP.put("LONGVARBINARY", "Byte[]");
         TYPEMAP.put("DATE", "Date");
         TYPEMAP.put("DATETIME", "Date");
         TYPEMAP.put("TIME", "Time");
@@ -47,6 +47,8 @@ public class TypeMappingUtil {
     }
 
     public static String getType(String key) {
+    	//数据库类型还包含有unsigned，所以用空格剔除掉
+    	key = key.split(" ")[0];
         if (TYPEMAP.containsKey(key)) {
             return TYPEMAP.get(key);
         } else {
