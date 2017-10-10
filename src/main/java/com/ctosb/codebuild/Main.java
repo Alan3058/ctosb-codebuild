@@ -168,7 +168,7 @@ public class Main extends MouseAdapter {
             tab.setSelectedComponent(buildByTable);
         } else if (target == menuItemSetting || target == buttonSetting) {
             // 设置
-            if (buildBySql == null || tab.indexOfComponent(buildBySql) == -1) {
+            if (configPanel == null || tab.indexOfComponent(configPanel) == -1) {
                 configPanel = new ConfigPanel(context);
             }
             tab.addTab("设置", configPanel);
