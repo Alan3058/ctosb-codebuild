@@ -6,12 +6,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class DatabaseMetaDateApplication {
+public class DatabaseMetaDataApplication {
 
     private DatabaseMetaData dbMetaData = null;
     private Connection con = null;
 
-    public DatabaseMetaDateApplication() {
+    public DatabaseMetaDataApplication() {
         this.getDatabaseMetaData();
     }
 
@@ -271,7 +271,7 @@ public class DatabaseMetaDateApplication {
     }
 
     public static void main(String[] args) {
-        DatabaseMetaDateApplication metaData = new DatabaseMetaDateApplication();
+        DatabaseMetaDataApplication metaData = new DatabaseMetaDataApplication();
         // metaData.getDataBaseInformations();
         // metaData.getAllTableList(null);
         // metaData.getAllViewList(null);
