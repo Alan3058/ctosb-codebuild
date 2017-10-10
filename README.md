@@ -6,4 +6,4 @@ ctosb-codebuild模块构建初衷是作者在开发J2EE项目过程中，由于�
 *  支持默认模版，也可以自定义修改模版
 *  可快速集成到eclipse插件中  
  
-**为了方便使用，代码生成器项目新增加了一个web项目，更多详情可前往[ctosb-codebuild-web](https://github.com/Alan3058/ctosb-codebuild-web)了解**
+**为了方便使用，代码生成器项目新增加了一个web项目，后续会将重心转移到web项目，更多详情可前往[ctosb-codebuild-web](https://github.com/Alan3058/ctosb-codebuild-web)了解**
