@@ -76,13 +76,13 @@ public class FreemarkerUtil {
      * 初始化
      */
     private static void init(String templatePath) throws IOException {
-        config = new Configuration();
+        config = new Configuration(Configuration.VERSION_2_3_23);
         // 设置处理空值
         config.setClassicCompatible(true);
         // 加载模板
         config.setDirectoryForTemplateLoading(new File(templatePath));
         // 设置对象包装器
-        config.setObjectWrapper(new DefaultObjectWrapper());
+        config.setObjectWrapper(new DefaultObjectWrapper(Configuration.VERSION_2_3_23));
         // 设置异常处理器
         config.setTemplateExceptionHandler(TemplateExceptionHandler.IGNORE_HANDLER);
     }
